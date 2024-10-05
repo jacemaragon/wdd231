@@ -1,0 +1,58 @@
+[
+    {
+        "name": "don lupe Cars",
+        "address": "123 Main St, Timbuktu",
+        "phone": "123-456-7890",
+        "website": "https://www.facebook.com/nissanculiacann",
+        "image": "autos don lupe.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "white line",
+        "address": "456 Elm St, Culiacan",
+        "phone": "234-567-8901",
+        "website": "https://www.facebook.com/comproaparatosdescompuestosculiacan",
+        "image": "linea blanca.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Uni limp",
+        "address": "789 Oak St, Culiacan",
+        "phone": "345-678-9012",
+        "website": "https://exeonsolutions.com/blogs/articulos/empresas-de-productos-de-limpieza-en-mexico?srsltid=AfmBOoo0JVyAolIZPxfM26VEhs-aT9C49Iw4JaR8B6UP-ewYozGe0CFa",
+        "image": "negocio de limpieza.jpeg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Clothes",
+        "address": "321 Pine St, Culiacan",
+        "phone": "456-789-0123",
+        "website": "https://hangten.com.mx/?srsltid=AfmBOorKkZ4EE1pGqrcSxUKIQbpowkKQe29mmRzl8gHGRml36LhmjpIm",
+        "image": "negocio de venta de ropa.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Pure water",
+        "address": "654 Maple St, Culiacan",
+        "phone": "567-890-1234",
+        "website": "https://aquaclyva.mx/ventana-vending/?gad_source=1&gclid=Cj0KCQjwpP63BhDYARIsAOQkATZRO6MvSDjPI7qGyQEaux1CMj7oyw-yHo2pcTsLegHINV099ZzQbRMaAlKwEALw_wcB",
+        "image": "venta de agua.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Electronics Steren",
+        "address": "987 Cedar St, Culiacan",
+        "phone": "678-901-2345",
+        "website": "https://www.steren.com.mx/?srsltid=AfmBOoq7L0d0XBz9wSJvnVmUpdTdr6kZ0YXMLvMStqVpWoG1vPTSwWmB",
+        "image": "venta de electronica.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Tire selling",
+        "address": "135 Willow St, Culiacan",
+        "phone": "789-012-3456",
+        "website": "https://pimallantas.com/?utm_campaign&utm_term&utm_source=adwords&utm_medium=ppc&ctf_src=x&ctf_net=adwords&ctf_mt&ctf_grp&ctf_ver=1&ctf_cam=21748299740&ctf_kw&ctf_acc=4677786005&ctf_ad&ctf_tgt&gad_source=1&gclid=Cj0KCQjwpP63BhDYARIsAOQkATb29vb8c4eYESjSxSe6PnylouPc48Ot2mwmN6UGx0Fvlcl9LbruAiYaAl3XEALw_wcB",
+        "image": "venta de llantas.jpg",
+        "membershipLevel": 1
+    }
+]
