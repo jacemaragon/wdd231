@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory">
+    <meta name="author" content="Jacem Aragon">
+    <title>Chamber Directory</title>
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Chamber Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="link-to-your-image.jpg">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>California Chamber of Commerce</h1>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-links">
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Hero Image" class="hero-image">
+        <div class="hero-content">
+            <h2>Welcome to the Chamber of Commerce</h2>
+            <p>Your Gateway to Business Opportunities</p>
+            <a href="join.html" class="cta-button">Join Us Today</a>
+        </div>
+    </section>
+
+    <main>
+        <h2>Member Directory</h2>
+        <div id="toggle-view">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </div>
+        <div id="member-container" class="grid-view"></div>
+
+
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: <span id="temperature">°C</span></p>
+            <p>Description: <span id="description"></span></p>
+            <p>Humidity: <span id="humidity">%</span></p>
+            <h3>3-Day Forecast:</h3>
+            <div id="forecast-container">
+                <div id="day1">
+                    <h4>Day 1</h4>
+                    <p>Temperature: <span id="forecast-temp1"></span>°C</p>
+                    <p>Description: <span id="forecast-desc1"></span></p>
+                </div>
+                <div id="day2">
+                    <h4>Day 2</h4>
+                    <p>Temperature: <span id="forecast-temp2"></span>°C</p>
+                    <p>Description: <span id="forecast-desc2"></span></p>
+                </div>
+                <div id="day3">
+                    <h4>Day 3</h4>
+                    <p>Temperature: <span id="forecast-temp3"></span>°C</p>
+                    <p>Description: <span id="forecast-desc3"></span></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="spotlight">
+            <h2>Company Spotlight</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact Information:<br>Culiacan Sinaloa<br>Valentin Canalizo 1904<br>Phone: 6675461684</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p>&copy; <span id="current-year"></span> Jacem Aragon. This is for WDD 231.</p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

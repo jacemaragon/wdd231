@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Autos don lupe",
+        "description": "come and get your own vehicle with us.",
+        "image": "images/autos-don-lupe.jpg",
+        "address": "123 Member St.",
+        "phone": "123-456-7890",
+        "website": "http://memberone.com"
+    },
+    {
+        "name": "Linea blanca",
+        "description": "buy the best washing machines on the market with us .",
+        "image": "images/linea-blanca.jpg",
+        "address": "456 Member Ave.",
+        "phone": "987-654-3210",
+        "website": "http://membertwo.com"
+    }
+]
