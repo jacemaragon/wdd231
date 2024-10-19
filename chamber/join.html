@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce Membership Application</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Membership Application Form</h2>
+      <form action="thankyou.html" method="get">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name" required>
+
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" title="Organization Title" pattern="[A-Za-z\s-]{7,}" autocomplete="organization-title">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" title="Email Address" autocomplete="email" required placeholder="example@domain.com">
+
+        <label for="phone">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required>
+
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" name="organization" title="Organization Name" autocomplete="organization" required>
+
+        <label for="membership-level">Membership Level</label>
+        <select id="membership-level" name="membership-level" required>
+          <option value="Non-Profit">Non Profit Membership</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+
+        <label for="description">Organization Description</label>
+        <textarea id="description" name="description" title="Organization Description"></textarea>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section class="membership-section">
+      <h2>Membership Levels</h2>
+
+      <div class="membership-card" id="non-profit-card">
+        <h3>Non Profit Membership Level</h3>
+        <button class="modal-btn" data-modal="non-profit-modal">Learn More</button>
+      </div>
+
+      <div class="membership-card" id="bronze-card">
+        <h3>Bronze Membership Level</h3>
+        <button class="modal-btn" data-modal="bronze-modal">Learn More</button>
+      </div>
+
+      <div class="membership-card" id="silver-card">
+        <h3>Silver Membership Level</</h3>
+        <button class="modal-btn" data-modal="silver-modal">Learn More</button>
+      </div>
+
+      <div class="membership-card" id="gold-card">
+        <h3>Gold Membership Level</h3>
+        <button class="modal-btn" data-modal="gold-modal">Learn More</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Chamber of Commerce</p>
+  </footer>
+
+  <div class="modal" id="non-profit-modal">
+    <div class="modal-content">
+      <span class="close-btn" data-close="non-profit-modal">&times;</span>
+      <h3>Non Profit Membership Level</h3>
+      <p>Details about the Non Profit Membership.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="bronze-modal">
+    <div class="modal-content">
+      <span class="close-btn" data-close="bronze-modal">&times;</span>
+      <h3>Bronze Membership Level</h3>
+      <p>Details about the Bronze Membership.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="silver-modal">
+    <div class="modal-content">
+      <span class="close-btn" data-close="silver-modal">&times;</span>
+      <h3>Silver Membership Level</h3>
+      <p>Details about the Silver Membership.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="gold-modal">
+    <div class="modal-content">
+      <span class="close-btn" data-close="gold-modal">&times;</span>
+      <h3>Gold Membership Level</h3>
+      <p>Details about the Gold Membership.</p>
+    </div>
+  </div>
+
+  <script src="scripts/join.js"></script>
+</body>
+</html>
