@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+header .logo img {
+    width: 100px;
+    z-index: 3; /* Keep logo on top */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    background-color: rgba(51, 51, 51, 0.8);
+    position: absolute;
+    top: 60px; /* Align below the header */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    opacity: 0; /* Start hidden */
+    visibility: hidden; /* Start hidden */
+    transition: visibility 0.3s, opacity 0.3s ease;
+}
+
+.nav-menu.show {
+    visibility: visible; /* Show the menu */
+    opacity: 1; /* Fade in */
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px; /* Added padding for better click area */
+    display: block; /* Make the entire area clickable */
+}
+
+.hamburger {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    position: relative;
+    top: -30px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    .nav-menu {
+        display: none; /* Ensure the menu doesn't display */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Show menu when 'show' class is added */
+        flex-direction: column; /* Ensure vertical stacking */
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        visibility: visible; /* Always visible on larger screens */
+        opacity: 1;
+        display: flex; /* Display as flex container */
+        position: static; /* Position statically in the layout */
+        height: auto; /* Allow natural height */
+        flex-direction: row; /* Horizontal layout */
+        gap: 20px; /* Space between menu items */
+    }
+}
+
+/* Additional styles for your hero, discover layout, sidebar, and footer */
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cta-button {
+    background-color: #ff6700;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.discover-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.discover-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.discover-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.discover-gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
