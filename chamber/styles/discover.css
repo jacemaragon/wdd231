@@ -11,40 +11,40 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
-    position: relative; /* Ensure relative positioning for child elements */
+    position: relative; 
 }
 
 header .logo img {
     width: 100px;
-    z-index: 3; /* Keep logo on top */
+    z-index: 3; 
 }
 
 .nav-menu {
     list-style: none;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     background-color: rgba(51, 51, 51, 0.8);
     position: absolute;
-    top: 60px; /* Align below the header */
+    top: 60px; 
     right: 0;
     width: 100%;
     text-align: center;
     z-index: 1;
-    opacity: 0; /* Start hidden */
-    visibility: hidden; /* Start hidden */
+    opacity: 0; 
+    visibility: hidden; 
     transition: visibility 0.3s, opacity 0.3s ease;
 }
 
 .nav-menu.show {
-    visibility: visible; /* Show the menu */
-    opacity: 1; /* Fade in */
+    visibility: visible; 
+    opacity: 1; 
 }
 
 .nav-menu li a {
     color: white;
     text-decoration: none;
-    padding: 15px; /* Added padding for better click area */
-    display: block; /* Make the entire area clickable */
+    padding: 15px;
+    display: block; 
 }
 
 .hamburger {
@@ -53,39 +53,39 @@ header .logo img {
     border: none;
     color: white;
     cursor: pointer;
-    display: none; /* Hidden by default */
+    display: none; 
     position: relative;
     top: -30px;
 }
 
 @media (max-width: 768px) {
     .hamburger {
-        display: block; /* Show hamburger on small screens */
+        display: block;
     }
 
     .nav-menu {
-        display: none; /* Ensure the menu doesn't display */
+        display: none; 
     }
 
     .nav-menu.show {
-        display: flex; /* Show menu when 'show' class is added */
-        flex-direction: column; /* Ensure vertical stacking */
+        display: flex; 
+        flex-direction: column; 
     }
 }
 
 @media (min-width: 769px) {
     .nav-menu {
-        visibility: visible; /* Always visible on larger screens */
+        visibility: visible; 
         opacity: 1;
-        display: flex; /* Display as flex container */
-        position: static; /* Position statically in the layout */
-        height: auto; /* Allow natural height */
-        flex-direction: row; /* Horizontal layout */
-        gap: 20px; /* Space between menu items */
+        display: flex;
+        position: static;
+        height: auto;
+        flex-direction: row;
+        gap: 20px;
     }
 }
 
-/* Additional styles for your hero, discover layout, sidebar, and footer */
+
 
 .hero {
     position: relative;

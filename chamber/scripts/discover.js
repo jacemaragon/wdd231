@@ -1,22 +1,22 @@
-// Toggle hamburger menu visibility
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show'); // Toggle the 'show' class
+    navMenu.classList.toggle('show'); 
 });
 
-// Close the menu when a link is clicked
+
 navMenu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
-        navMenu.classList.remove('show'); // Hide the menu when a link is clicked
+        navMenu.classList.remove('show'); 
     }
 });
 
-// Visitor Information using localStorage
+
 const visitorInfo = document.getElementById('visitor-info');
 
-// Check if visitor name is in localStorage
+
 const visitorName = localStorage.getItem('visitorName');
 
 if (visitorName) {
