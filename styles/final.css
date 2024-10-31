@@ -1,0 +1,428 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Style for the logo */
+.logo {
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.logo-image {
+    max-width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and navigation */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50; /* Change as needed */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Contact Form Styles */
+#contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Products Section Styles */
+#products {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px; /* Adjust width as needed */
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-card .btn:hover {
+    background-color: #45a049;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+/* Other existing styles... */
+/* Specific styles for the Procedures page */
+#procedures {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+#procedures h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#procedures article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#procedures article h2 {
+    font-size: 1.75rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#procedures article p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+/* Styling for FAQ section */
+#faq {
+    padding: 40px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+#faq h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#faq ul li {
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#faq ul li strong {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+#faq ul li::before {
+    content: "Q";
+    font-size: 1.5rem;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    #procedures, #faq {
+        padding: 20px;
+    }
+
+    #procedures h1, #faq h2 {
+        font-size: 2rem;
+    }
+
+    #procedures article h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Hamburger menu styles */
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #f4f8fd;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    /* Menu links styles */
+    nav ul {
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Add transition to the main content */
+    main {
+        transition: margin-top 0.3s ease;
+    }
+
+    /* Push down the main content when menu is active */
+    .nav-links.active + main {
+        margin-top: 200px; /* Adjust based on how tall your nav is */
+    }
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .nav-links ul li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Hero section styling */
+.hero-section {
+    background-color: #e5e5e5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-section .btn {
+    background-color: #ff4081;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Procedures section */
+.procedure-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.procedure-card {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.procedure-card img {
+    width: 100%;
+    height: auto;
+}
+
+.procedure-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.procedure-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.procedure-card:hover {
+    transform: translateY(-10px);
+}
+/* Product section */
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.product-cards {
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-cards img {
+    width: 100%;
+    height: auto;
+}
+
+.product-cards h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-cards p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-cards:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative; /* For positioning */
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
